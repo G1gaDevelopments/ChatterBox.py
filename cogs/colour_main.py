@@ -31,7 +31,7 @@ class ColourMain(commands.Cog):
     async def blue(self,ctx,*,content):
         content = await self.clearnl(content)
         await ctx.send("```ini"+"\n"+
-                       f"[{content}]"+"\n"+
+                       f"[ {content} ]"+"\n"+
                        "```")
 
     @commands.command()
@@ -45,7 +45,7 @@ class ColourMain(commands.Cog):
     async def orange(self,ctx,*,content):
         content = await self.clearnl(content)
         await ctx.send("```asciidoc"+"\n"+
-                       f"[{content}]"+"\n"+
+                       f"[ {content} ]"+"\n"+
                        "```")
 
     @commands.command()
@@ -59,19 +59,19 @@ class ColourMain(commands.Cog):
     async def cyan(self,ctx,*,content):
         content = await self.clearnl(content)
         await ctx.send("```py"+"\n"+
-                       f"\"{content}\""+"\n"+
+                       f"\" {content} \""+"\n"+
                        "```")
 
     @commands.command(aliases=["grey"])
     async def gray(self,ctx,*,content):
         await ctx.send("```cpp"+"\n"+
-                       f"/*{content}*/"+"\n"+
+                       f"/* {content} */"+"\n"+
                        "```")
 
     @commands.command(aliases=["tex"])
     async def highlight(self,ctx,*,content):
         await ctx.send("```tex"+"\n"+
-                       f"${content}"+"\n"+
+                       f"$ {content}"+"\n"+
                        "```")
 
 # --- ADDING EXT --- #
