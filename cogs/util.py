@@ -33,7 +33,7 @@ class UtilCog(commands.Cog):
     @commands.command()
     async def help(self,ctx):
         embed = discord.Embed(title = "Need Help?", colour = discord.Colour.green(),
-                              description = ":page_facing_up: A list of commands can be found [here](https://github.com/Errorcrafter/ChatterBox.py/blob/main/commandlist.md)!\n\n"+
+                              description = ":page_facing_up: A list of commands can be found [here](https://github.com/Errorcrafter/ChatterBox.py/blob/main/commandlist.md#chatterboxpy-command-list)!\n\n"+
                               ":open_file_folder: This bot is open source! Find it on Github [here](https://github.com/Errorcrafter/ChatterBox.py).\n\n"+
                               ":question: Still lost? Join our [support server](https://www.example.com)!")
         await ctx.send(embed=embed)
