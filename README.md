@@ -10,3 +10,6 @@ ChatterBox's main prefix is `cb!`, though `%` and `cb%` are also valid prefixes.
 
 ## Planned Features
 Other miscellaneous text commands, such as drunkify, camelcase, etc. will be added, along with image manipulation comands made with [Pillow](https://github.com/python-pillow/Pillow), a fork of Python's Imaging Library. Moderation and economy commands may also be added if demand for it is high.
+
+## Dependencies
+This bot uses the discord.py library and the random module.
