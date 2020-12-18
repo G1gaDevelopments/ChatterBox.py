@@ -14,8 +14,9 @@ def getprefix(bot,msg):
 # --- BOT SETUP --- #
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix=getprefix,intents=intents)
+bot.remove_command("help") # remove default help command
 
-ext_names = ["cogs.testcog","cogs.colour_main"] # add all cog/extension names here
+ext_names = ["cogs.testcog","cogs.colour","cogs.util"] # add all cog/extension names here
 for ext in ext_names:
     print(f"LOADING EXT {ext}")
     bot.load_extension(ext) # load every ext
