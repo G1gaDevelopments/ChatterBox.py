@@ -2,6 +2,7 @@
 import discord
 from discord.ext import commands
 from discord.ext import tasks
+import random
 
 # --- COLOURS --- #
 class ColourMain(commands.Cog):
@@ -18,6 +19,10 @@ class ColourMain(commands.Cog):
         s_content = str(content) # converts to string in case it is a different object type for some reason
         p_content = s_content.replace(' ', replacement) # replaces whitespace
         return p_content
+
+    async def writetip(self):
+        if random.randint(0,9) = 9:
+            pass
 
     # --- COLOUR COMMANDS --- #
     @commands.command()
