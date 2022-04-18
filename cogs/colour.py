@@ -26,6 +26,12 @@ class ColourMain(commands.Cog):
         await ctx.send("```diff"+"\n"+
                        f"- {content}"+"\n"+
                        "```")
+    @commands.command()
+    async def olive(self,ctx,*,content):
+        content = await self.clearnl(content)
+        await ctx.send("```diff"+"\n"+
+                       f"+ {content}"+"\n"+
+                       "```")
 
     @commands.command()
     async def blue(self,ctx,*,content):
